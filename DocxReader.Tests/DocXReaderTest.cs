@@ -26,5 +26,21 @@ namespace Tests
 
             sut.Text.Is("FooBar");
         }
+
+        [TestCase]
+        public void ファイルをオープンしプロパティを取得する()
+        {
+            var sut = new DocXReader(@"Data\FileProperties.docx");
+
+            sut.Properties.Title.Is("Title");
+            sut.Properties.SubTitle.Is("サブタイトル");
+            sut.Properties.Creator.Is("posaunehm");
+            sut.Properties.Keywords.Is("Keyword");
+            sut.Properties.Description.Is("");
+            sut.Properties.Category.Is("分類");
+            sut.Properties.Status.Is("状態");
+            sut.Properties.CreatedDate.Month.Is(12);
+            sut.Properties.CreatedDate.Day.Is(25);
+        }
     }
 }

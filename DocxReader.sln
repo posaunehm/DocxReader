@@ -5,7 +5,12 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxReader", "DocxReader\DocxReader.csproj", "{FD0AFBF3-EBC6-4BB8-AAF7-AD9D39897F16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxReader.Tests", "Tests\DocxReader.Tests.csproj", "{81FD9629-49EA-4FCF-B123-EF6EE51BE025}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxReader.Tests", "DocxReader.Tests\DocxReader.Tests.csproj", "{81FD9629-49EA-4FCF-B123-EF6EE51BE025}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{418F78C8-3352-4E96-8759-768207464085}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
